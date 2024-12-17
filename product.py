@@ -1,7 +1,6 @@
 class Product:
-    def __init__(self,title,name,cost,date_use,count):
-        self.title = title
+    def __init__(self,name,count,date_use,cost):
         self.name = name
-        self.cost = cost
-        self.date_use = date_use
         self.count = count
+        self.date_use = date_use
+        self.cost = cost
