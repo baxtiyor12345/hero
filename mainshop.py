@@ -1,7 +1,9 @@
+from random import random
+
 from shop import Shop
 from user import User
 from card import Card
-from product import Product
+from product import Product, randomNum
 
 shop = Shop("HUMO","Toshkent Shahar",10000)
 
@@ -10,6 +12,8 @@ user2 = User(87654321,"Kamoliddin Kabulov","kamoliddinkabulov@gmail.com","+99878
 user3 = User(11223344,"Ali Valiyev","alivaliyev@gmail.com","+998788889888",False)
 user4 = User(44332211,"Nizomiddin Jamolov","nizomiddin@gmail.com","+998788889888",False)
 user5 = User(12341234,"Alisher Navoiy","navoiylegenda@gmail.com","+998788889888",False)
+
+superuser =[user1,user2,user3,user4,user5]
 
 card1 = Card(11111111,1111,"14/25")
 card2 = Card(22222222,2222,"12/25")
@@ -29,16 +33,25 @@ shop.clients.append(user3)
 shop.clients.append(user4)
 shop.clients.append(user5)
 
-product1 = Product("Olma",100,1929,5)
-product2 = Product("Olcha",100,1929,6)
-product3 = Product("Anor",100,1929,6)
-product4 = Product("Nok",100,1929,6)
-product5 = Product("Anjir",100,1929,5)
-product6 = Product("Kiwi",100,1929,8)
-product7 = Product("Uzum",100,1929,6)
-product8 = Product("Apelsin",100,1929,8)
-product9 = Product("Limon",100,1929,4)
-product10 = Product("Xurmo",100,1929,7)
+product1 = Product("Olma", 100, 2025)
+product2 = Product("Olcha", 100, 2024)
+product3 = Product("Anor", 100, 2025)
+product4 = Product("Nok", 100, 2025)
+product5 = Product("Anjir", 100, 2025)
+product6 = Product("Kiwi", 100, 2024)
+product7 = Product("Uzum", 100, 2025)
+product8 = Product("Apelsin", 100, 2024)
+product9 = Product("Limon", 100, 2025)
+product10 = Product("Xurmo", 100, 2025)
+
+superproduct = [product1, product2, product3, product4, product5, product6, product7, product8, product9, product10]
+
+# for product in superproduct:
+#     print(product)
+#     product.discount()
+#     print()
+#Бу функция текшириш учун чегирмани тест килиш учун факат админ коради нега скидкалигини датасини хам
+
 
 shop.products.append(product1)
 shop.products.append(product2)

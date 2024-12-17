@@ -25,9 +25,7 @@ class Shop:
         else:
             print("User ID si faqat sonlarda kiritishi kerak. ")
 
-def user_regist():
-    user_name_surname = str(input("ВВедите свое имя: "))
-    user_id = int(input("ВВедите свой паспортайди: "))
-    if user_name_surname and user_id == clients and self.ba
+
+
 
 
