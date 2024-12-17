@@ -1,4 +1,5 @@
-class Card():
-    def __init__(self,number,password,phone,datework):
+class Card:
+    def __init__(self,number,password,datetime):
         self.number = number
-        self.pass=0000
+        self.password = password
+        self.datetime = datetime

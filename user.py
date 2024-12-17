@@ -1,9 +1,8 @@
-from card import Card
-
-class User(Card):
-    def __init__(self,name,surname,bag,admin):
-        super().__init__()
+class User:
+    def __init__(self,name,surname,passport_id,basket,admin):
         self.name = name
         self.surname = surname
-        self.bag = bag
+        self.passport_id = passport_id
+        self.cards = []
+        self.basket = basket
         self.admin = admin
