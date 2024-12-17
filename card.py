@@ -1,9 +1,6 @@
 class Card:
-    def __init__(self,number,password,datework,balance):
-        self.number = []
+    def __init__(self,number,password,datetime):
+        self.number = number
         self.password = password
-        self.datework = datework
-        self.balance = 0
+        self.datetime = datetime
 
-    def info(self):
-        return f"{self.number,self.password,self.datework,self.balance}"
