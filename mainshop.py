@@ -3,7 +3,7 @@ from random import random
 from shop import Shop
 from user import User
 from card import Card
-from product import Product, randomNum
+from product import Product
 
 shop = Shop("HUMO","Toshkent Shahar",10000)
 
